@@ -1,0 +1,27 @@
+@import "../tools/normalize";
+@import "../tools/typography";
+@import "../tools/colors";
+@import "../tools/breakpoints";
+
+.body {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  color: $color-main;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $font-primary;
+  font-weight: 300;
+  background-color: $color-background;
+  text-space: 12px;
+  opacity: 80%;
+
+  @media screen and (max-width: $mb) {
+    font-size: 16px;
+  }
+}
+
+@import "../sections/_header.scss";
+@import "../sections/_menu.scss";
+@import "../sections/_main.scss";
+@import "../sections/_footer.scss";

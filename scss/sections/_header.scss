@@ -1,0 +1,133 @@
+@import "../tools/breakpoints";
+@import "../tools/colors";
+@import "../tools/typography";
+
+.background {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
+}
+
+.headering-wrap {
+  background-image: url("../../img/background/header-base.png");
+  position: relative;
+  top: 31px;
+  height: 80px;
+}
+
+.headering {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding-top: 21px;
+  height: 41px;
+
+    &-logo {
+      flex-grow: 2;
+    }
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 500px;
+      padding-right: 46px;
+
+      &__links {
+        text-decoration: none;
+        color: $color-main;
+
+        &:hover {
+          color: $color-secondary;
+          text-decoration-line: underline;
+        }
+
+        &:focus {
+          font-style: italic;
+        }
+
+        &:active {
+          background-color: $color-main;
+          color: $color-secondary;
+
+        }
+      }
+
+      &__items {
+        font-size: 14px;
+      }
+    }
+}
+
+.logo-img {
+  @media screen and (max-width: 1167px) {
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+}
+.icon-sun-rectangle {
+  width: 32px;
+  height: 32px;
+  opacity: 30%;
+  border-radius: 1px;
+  background-color: $color-main;
+}
+
+.icon-sun {
+  width: 20px;
+  height: 20px;
+  fill: $color-main;
+  position: relative;
+  right: 26px;
+  top: 4px;
+
+}
+
+.hamburger__img {
+  color: $color-main;
+}
+
+@media screen and (max-width: 4000px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tb) {
+
+  .nav-mb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hamburger {
+    padding-right: 16px;
+    padding-top: 5px;
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .nav-menu {
+    display: none;
+
+    .menu__open & {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 40px;
+      height: 100px;
+
+      .headering-list__items {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
