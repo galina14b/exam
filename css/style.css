@@ -356,7 +356,7 @@ template {
 }
 
 .headering-wrap {
-  background-image: url("../../img/background/header-base.png");
+  background-image: url("../img/background/header-base.png");
   position: relative;
   top: 31px;
   height: 80px;
@@ -546,10 +546,10 @@ template {
   height: 13px;
   width: 112px;
   background-color: #53F3CD;
-  opacity: 30%;
   position: relative;
   bottom: 13px;
   left: 10px;
+  opacity: 0.3;
 }
 .rectangle-under-link_wider {
   width: 172px;
@@ -679,7 +679,7 @@ template {
   flex-wrap: wrap;
   max-width: 675px;
   max-height: 570px;
-  background-image: url("../../img/background/statistic-background.png");
+  background-image: url("../img/background/statistic-background.png");
   position: relative;
   bottom: 632px;
   left: 403px;
@@ -795,11 +795,12 @@ template {
 @media screen and (max-width: 964px) {
   .four-sections-block__column {
     padding-top: 10px;
+    margin: 0 auto;
   }
 }
 .four-sections-block__column_second {
   height: 570px;
-  margin-top: -136px;
+  margin-top: -104px;
 }
 @media screen and (max-width: 964px) {
   .four-sections-block__column_second {
@@ -862,7 +863,7 @@ template {
   width: 500px;
 }
 .four-sections-block_second-line {
-  padding-top: 136px;
+  padding-top: 104px;
 }
 @media screen and (max-width: 912px) {
   .four-sections-block_second-line {
@@ -901,7 +902,7 @@ template {
   margin-top: 140px;
   max-width: 1152px;
   height: 400px;
-  background-image: url("../../img/background/quote-background.png");
+  background-image: url("../img/background/quote-background.png");
 }
 @media screen and (max-width: 912px) {
   .quote-block {
@@ -1149,7 +1150,7 @@ template {
   margin-top: 120px;
   width: 566px;
   height: 540px;
-  background-image: url("../../img/background/features-background-image.png");
+  background-image: url("../img/background/features-background-image.png");
 }
 @media screen and (max-width: 729px) {
   .sell-buy-block-outerwrap {
@@ -1209,7 +1210,7 @@ template {
   width: 18px;
   height: 18px;
   fill: #FFFFFF;
-  opacity: 40%;
+  opacity: 0.4;
 }
 .sell-buy-block__arrow {
   width: 12.41px;
@@ -1227,20 +1228,20 @@ template {
   font-weight: 600;
   font-size: 12px;
   line-height: 24px;
-  opacity: 30%;
+  opacity: 0.3;
 }
 .sell-buy-block__number {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
   font-style: italic;
-  opacity: 70%;
+  opacity: 0.7;
   padding-left: 8px;
 }
 .sell-buy-block__number_bigger {
   font-size: 56px;
   line-height: 24px;
-  opacity: 90%;
+  opacity: 0.9;
   font-weight: 700;
   padding-left: 6px;
 }
@@ -1262,7 +1263,7 @@ template {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
-  opacity: 80%;
+  opacity: 0.8;
   width: 76px;
 }
 .sell-buy-block__pay-box_under-box {
@@ -1270,7 +1271,7 @@ template {
   height: 28px;
   border-radius: 4px;
   background-color: #FFFFFF;
-  opacity: 10%;
+  opacity: 0.1;
   position: relative;
   bottom: 25px;
 }
@@ -1283,7 +1284,7 @@ template {
   width: 51px;
   height: 17px;
   background-color: #FFFFFF;
-  opacity: 6%;
+  opacity: 0.06;
 }
 
 .fees-lines {
@@ -1302,10 +1303,10 @@ template {
 .block-with-join {
   background-color: #161926;
   height: 452px;
-  max-width: 47%;
   position: relative;
   bottom: 500px;
   left: 391px;
+  max-width: 635px;
 }
 @media screen and (max-width: 954px) {
   .block-with-join {
@@ -1350,8 +1351,13 @@ template {
   }
 }
 .block-with-join__outer-wrap {
-  max-width: 680px;
+  max-width: 529px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1138px) {
+  .block-with-join__outer-wrap {
+    max-width: 762px;
+  }
 }
 @media screen and (max-width: 768px) {
   .block-with-join__outer-wrap {
@@ -1369,10 +1375,12 @@ template {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 680px;
+  padding-left: 5px;
 }
-@media screen and (max-width: 1139px) {
+@media screen and (min-width: 1139px) {
   .block-with-join__inner-wrap {
-    max-width: 592px;
+    max-width: 658px;
   }
 }
 @media screen and (max-width: 1061px) {
@@ -1436,6 +1444,7 @@ template {
 }
 .block-with-join__columns_column {
   max-width: 320px;
+  padding-left: 40px;
 }
 .block-with-join__link {
   width: 308px;
@@ -1556,7 +1565,7 @@ template {
 .client-rev-block__boxes-with-back-first {
   width: 32%;
   height: 333px;
-  background-image: url("../../img/background/image1.png");
+  background-image: url("../img/background/image1.png");
   opacity: 70%;
 }
 @media screen and (min-width: 321px) and (max-width: 608px) {
@@ -1574,6 +1583,7 @@ template {
   height: 234px;
   margin: 0 auto;
   padding-top: 51px;
+  padding-left: 48px;
 }
 @media screen and (max-width: 1058px) {
   .client-rev-block_innerwrap {
@@ -1583,34 +1593,41 @@ template {
 @media screen and (max-width: 941px) {
   .client-rev-block_innerwrap {
     width: 28.6vw;
+    padding-left: 10px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 608px) {
   .client-rev-block_innerwrap {
     width: 280px;
+    padding-left: 10px;
   }
 }
 @media screen and (max-width: 320px) {
   .client-rev-block_innerwrap {
     width: 250px;
+    padding-left: 5px;
   }
 }
 .client-rev-block_innerwrap-narrow {
   width: 26.606vw;
+  padding-left: 48px;
 }
 @media screen and (max-width: 941px) {
   .client-rev-block_innerwrap-narrow {
     width: 28.6vw;
+    padding-left: 10px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 608px) {
   .client-rev-block_innerwrap-narrow {
     width: 280px;
+    padding-left: 10px;
   }
 }
 @media screen and (max-width: 320px) {
   .client-rev-block_innerwrap-narrow {
     width: 250px;
+    padding-left: 5px;
   }
 }
 .client-rev-block__text {
@@ -1620,6 +1637,7 @@ template {
   font-weight: 400;
   opacity: 80%;
   font-style: normal;
+  max-width: 330px;
 }
 @media screen and (max-width: 875px) {
   .client-rev-block__text {
@@ -1629,7 +1647,7 @@ template {
 .client-rev-block__boxes-with-back_second {
   width: 32%;
   height: 333px;
-  background-image: url("../../img/background/image2.png");
+  background-image: url("../img/background/image2.png");
   opacity: 70%;
 }
 @media screen and (min-width: 321px) and (max-width: 608px) {

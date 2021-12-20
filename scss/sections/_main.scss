@@ -91,12 +91,12 @@
   height: 13px;
   width: 112px;
   background-color: $color-tertiary;
-  opacity: 30%;
   position: relative;
   bottom: 13px;
   left: 10px;
+  opacity: 0.3;
 
-    &_wider {
+  &_wider {
       width: 172px;
       bottom: 9px;
     }
@@ -214,7 +214,7 @@
   flex-wrap: wrap;
   max-width: 675px;
   max-height: 570px;
-  background-image: url("../../img/background/statistic-background.png");
+  background-image: url("../img/background/statistic-background.png");
   position: relative;
   bottom: 632px;
   left: 403px;
@@ -315,11 +315,12 @@
 
     @media screen and (max-width: 964px) {
       padding-top: 10px;
+      margin: 0 auto;
     }
 
       &_second {
         height: 570px;
-        margin-top: -136px;
+        margin-top: -104px;
 
         @media screen and (max-width: 964px) {
           margin-top: -50px;
@@ -378,7 +379,7 @@
   }
 
   &_second-line {
-    padding-top: 136px;
+    padding-top: 104px;
 
     @media screen and (max-width: 912px) {
       padding-top: 10px;
@@ -415,7 +416,7 @@
   margin-top: 140px;
   max-width: 1152px;
   height: 400px;
-  background-image: url("../../img/background/quote-background.png");
+  background-image: url("../img/background/quote-background.png");
 
   @media screen and (max-width: 912px) {
     margin-top: 0;
@@ -643,7 +644,7 @@
   margin-top: 120px;
   width: 566px;
   height: 540px;
-  background-image: url("../../img/background/features-background-image.png");
+  background-image: url("../img/background/features-background-image.png");
 
   @media screen and (max-width: 729px) {
     width: 373px;
@@ -699,7 +700,7 @@
     width: 18px;
     height: 18px;
     fill: $color-main;
-    opacity: 40%;
+    opacity: 0.4;
   }
 
   &__arrow {
@@ -720,7 +721,7 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 24px;
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   &__number {
@@ -728,13 +729,13 @@
     line-height: 24px;
     font-weight: 600;
     font-style: italic;
-    opacity: 70%;
+    opacity: 0.7;
     padding-left: 8px;
 
     &_bigger {
       font-size: 56px;
       line-height: 24px;
-      opacity: 90%;
+      opacity: 0.9;
       font-weight: 700;
       padding-left: 6px;
     }
@@ -759,7 +760,7 @@
       font-size: 14px;
       line-height: 24px;
       font-weight: 600;
-      opacity: 80%;
+      opacity: 0.8;
       width: 76px;
     }
 
@@ -768,7 +769,7 @@
       height: 28px;
       border-radius: 4px;
       background-color: $color-main;
-      opacity: 10%;
+      opacity: 0.1;
       position: relative;
       bottom: 25px;
 
@@ -786,7 +787,7 @@
   width: 51px;
   height: 17px;
   background-color: $color-main;
-  opacity: 6%;
+  opacity: 0.06;
 }
 
 .fees-lines {
@@ -805,10 +806,11 @@
 .block-with-join {
   background-color: $color-background;
   height: 452px;
-  max-width: 47%;
   position: relative;
   bottom: 500px;
   left: 391px;
+  max-width: 635px;
+
 
   @media screen and (max-width: 954px) {
     height: 638px;
@@ -846,9 +848,12 @@
   }
 
   &__outer-wrap {
-    //max-width: 41.667vw;
-    max-width: 680px;
+    max-width: 529px;
     margin: 0 auto;
+
+    @media screen and (min-width: 1138px) {
+      max-width: 762px;
+    }
 
     @media screen and (max-width: $tb) {
       max-width: 320px;
@@ -865,9 +870,11 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 680px;
+    padding-left: 5px;
 
-    @media screen and (max-width: 1139px) {
-      max-width: 592px;
+    @media screen and (min-width: 1139px) {
+      max-width: 658px;
     }
 
     @media screen and (max-width: 1061px) {
@@ -888,7 +895,6 @@
 
     @media screen and (max-width: $tb) {
       max-width: 320px;
-      //max-width: 47.526vw;
     }
 
     @media screen and (max-width: $mb) {
@@ -925,8 +931,11 @@
     align-self: flex-start;
     padding-left: 5px;
 
+
+
     &_column {
       max-width: 320px;
+      padding-left: 40px;
     }
   }
 
@@ -1046,7 +1055,7 @@
   &__boxes-with-back-first {
     width: 32%;
     height: 333px;
-    background-image: url("../../img/background/image1.png");
+    background-image: url("../img/background/image1.png");
     opacity: 70%;
 
     @media screen and (min-width: $mb+1) and (max-width: 608px) {
@@ -1063,6 +1072,7 @@
     height: 234px;
     margin: 0 auto;
     padding-top: 51px;
+    padding-left: 48px;
 
     @media screen and (max-width: 1058px) {
       padding-top: 20px;
@@ -1070,30 +1080,37 @@
 
     @media screen and (max-width: 941px) {
       width: 28.6vw;
+      padding-left: 10px;
     }
 
     @media screen and (min-width: $mb+1) and (max-width: 608px) {
       width: 280px;
+      padding-left: 10px;
     }
 
     @media screen and (max-width: $mb) {
       width: 250px;
+      padding-left: 5px;
     }
   }
 
   &_innerwrap-narrow {
     width: 26.606vw;
+    padding-left: 48px;
 
     @media screen and (max-width: 941px) {
       width: 28.6vw;
+      padding-left: 10px;
     }
 
     @media screen and (min-width: $mb+1) and (max-width: 608px) {
       width: 280px;
+      padding-left: 10px;
     }
 
     @media screen and (max-width: $mb) {
       width: 250px;
+      padding-left: 5px;
     }
   }
 
@@ -1104,6 +1121,7 @@
     font-weight: 400;
     opacity: 80%;
     font-style: normal;
+    max-width: 330px;
 
     @media screen and (max-width: 875px) {
       font-size: 14px;
@@ -1113,7 +1131,7 @@
   &__boxes-with-back_second {
     width: 32%;
     height: 333px;
-    background-image: url("../../img/background/image2.png");
+    background-image: url("../img/background/image2.png");
     opacity: 70%;
 
     @media screen and (min-width: $mb+1) and (max-width: 608px) {
